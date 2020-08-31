@@ -14,8 +14,8 @@ def parseGPS(str, s):
 		data = s.recv(1024)
 		print 'result: ' + (data.decode())
 		
-HOST = '192.168.123.102'
-PORT = 34190
+HOST = 'Your server IP'
+PORT = 'your server port number (not string)' 
 
 serialPort = serial.Serial("/dev/ttyAMA0", 9600, timeout=0.5)
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
