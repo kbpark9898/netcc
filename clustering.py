@@ -7,8 +7,8 @@ def cluster(cord_x, cord_y):
     #가우시안분포 활용한 랜덤 좌표 생성
     #나머지 두개의 좌표를 조절할것
     g0=np.random.multivariate_normal([cord_x, cord_y], [[0.0005,0],[0,0.0005]], 100)
-    g1=np.random.multivariate_normal([37.2440752, 127.07981745], [[0.0005,0],[0,0.0005]], 100)
-    g2=np.random.multivariate_normal([37.243220, 127.078420], [[0.0005,0],[0,0.0005]], 100)
+    g1=np.random.multivariate_normal(["lat,lon"], [[0.0005,0],[0,0.0005]], 100)
+    g2=np.random.multivariate_normal(["lat, lon"], [[0.0005,0],[0,0.0005]], 100)
     # g0=np.random.rand(100, 2)
     # g1=np.random.rand(100, 2)
     # g2=np.random.rand(100,2)
